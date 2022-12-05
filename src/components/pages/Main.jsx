@@ -26,7 +26,7 @@ function Main() {
   useEffect(() => {
     const fetchPopular = `${API_URL}movie/popular?api_key=${API_KEY}&language=ko-KOR&page=1`;
     fetchMovies(fetchPopular);
-  }, []);
+  });
   const fetchMovies = (fetchPopular) => {
     fetch(fetchPopular)
       .then((response) => response.json())
@@ -40,7 +40,7 @@ function Main() {
   };
   useEffect(() => {
     fetchPopular(filtered);
-  }, []);
+  });
   const fetchPopular = async () => {
     const data = await fetch(
       "https://api.themoviedb.org/3/movie/popular?api_key=0466376d0c5ab578b755f58c7beec394&language=ko-KOR&page=1"
