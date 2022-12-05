@@ -1,5 +1,5 @@
 import React from "react";
-import { API_KEY, API_URL, IMAGE_BASE_URL } from "../../utils/Config";
+import { IMAGE_BASE_URL } from "../../utils/Config";
 
 import "swiper/css";
 import "swiper/css/pagination";
