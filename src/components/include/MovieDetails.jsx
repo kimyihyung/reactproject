@@ -26,7 +26,7 @@ function MovieDetails() {
       .then((response) => {
         setMovies(response);
       });
-  }, []);
+  });
 
   useEffect(() => {
     const movieinfo3 = `${API_URL}movie/${movieId}/videos?api_key=${API_KEY}&language=ko-KOR`;
@@ -35,16 +35,16 @@ function MovieDetails() {
       .then((response) => {
         setVideos(response);
       });
-  }, []);
+  });
 
   useEffect(() => {
-    const movieinfo1 = `${API_URL}movie/${movieId}/credits?api_key=${API_KEY}&language=ko-KOR​`;
+    const movieinfo1 = `${API_URL}movie/${movieId}/credits?api_key=${API_KEY}&language=ko-KOR`;
     fetch(movieinfo1)
       .then((response) => response.json())
       .then((response) => {
         setActor(response.cast);
       });
-  }, [Movies]);
+  });
 
   //detail 더보기 클릭
   const onSubmit = () => {
