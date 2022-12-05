@@ -1,0 +1,27 @@
+.wrap {
+    width: 100%;
+    display: flex;
+    background-image: linear-gradient(#570059 0%, #212121 51%);
+}
+
+.left {
+    width: 100%;
+}
+
+.left .more {
+    align-items: center;
+    font-size: 1vw;
+    display: flex;
+    justify-content: center;
+    padding: 1vw;
+    border-radius: 50%;
+    z-index: 100;
+    margin: 2vw 0 2vw 0;
+    transform: translateX(43vw);
+    background: rgba(255, 255, 255, 0.677);
+}
+
+/* #aside {
+    width: 28%;
+    background: #cc
+  } */
