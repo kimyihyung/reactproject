@@ -43,7 +43,7 @@ function Main() {
   }, []);
   const fetchPopular = async () => {
     const data = await fetch(
-      "https://api.themoviedb.org/3/movie/popular?api_key=REMOVED_EXPOSED_KEY&language=ko-KOR&page=1"
+      `https://api.themoviedb.org/3/movie/popular?api_key=${API_KEY}&language=ko-KOR&page=1`
     );
     const movies = await data.json();
     console.log(movies);
